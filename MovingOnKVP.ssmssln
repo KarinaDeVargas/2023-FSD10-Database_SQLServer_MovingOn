@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 19.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "MovingOnKVP", "MovingOnKVP\MovingOnKVP.ssmssqlproj", "{8E4B21D4-2322-446F-9C82-09E83FDD33F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E4B21D4-2322-446F-9C82-09E83FDD33F3}.Default|Default.ActiveCfg = Default
+		{7246E70F-EA4B-4319-AB5F-B7006458BCEF}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA44FDEF-82E8-4522-A8D7-BCB92936D89B}
+	EndGlobalSection
+EndGlobal

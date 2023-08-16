@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="MovingOnKVP">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="MSI:MSI\Karina de V Pereira">
+          <Created>2023-08-15T15:11:34.8104102-04:00</Created>
+          <Type>SQL</Type>
+          <Server>MSI</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="01_create_database_object_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>01_create_database_object_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="02_create_schema_objects_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>02_create_schema_objects_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="03_create_user_defined_data_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>03_create_user_defined_data_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="04_create_table_objects_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>04_create_table_objects_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="05_apply_data_integrity_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>05_apply_data_integrity_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="06_creating_indexes_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>06_creating_indexes_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="07_entering_data_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>07_entering_data_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="08_transfer_tables_to_other_schamas_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>08_transfer_tables_to_other_schamas_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="14_create_views_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>14_create_views_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="15_Built_IN_T-SQL_Functions_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>15_Built_IN_T-SQL_Functions_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="16_user_defined_functions_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>16_user_defined_functions_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="17_system_stored_procedures_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>17_system_stored_procedures_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="18_user_defined_procedures_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>18_user_defined_procedures_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="19_user_defined_triggers_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>19_user_defined_triggers_MovingOn_KVP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Assignment_03_active_inactive_vested.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Assignment_03_active_inactive_vested.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Assignment_03_area_codes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Assignment_03_area_codes.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
