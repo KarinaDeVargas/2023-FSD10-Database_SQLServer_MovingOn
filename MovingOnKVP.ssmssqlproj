@@ -67,9 +67,15 @@
           <AssociatedConnUserName />
           <FullPath>08_transfer_tables_to_other_schamas_MovingOn_KVP.sql</FullPath>
         </FileNode>
+        <FileNode Name="10_updating_data_MovingOn_KVP.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>10_updating_data_MovingOn_KVP.sql</FullPath>
+        </FileNode>
         <FileNode Name="14_create_views_MovingOn_KVP.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>14_create_views_MovingOn_KVP.sql</FullPath>
         </FileNode>
@@ -98,8 +104,8 @@
           <FullPath>18_user_defined_procedures_MovingOn_KVP.sql</FullPath>
         </FileNode>
         <FileNode Name="19_user_defined_triggers_MovingOn_KVP.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MSI:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MSI</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>19_user_defined_triggers_MovingOn_KVP.sql</FullPath>
         </FileNode>

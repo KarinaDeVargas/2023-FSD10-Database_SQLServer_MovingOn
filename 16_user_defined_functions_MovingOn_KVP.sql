@@ -1,3 +1,5 @@
+-- NOT USED
+
 /* Purpose: User-Defined Functions in database MovingOn_KVP
 Script Date: August 16, 2023
 Developed by: Karina De Vargas Pereira
@@ -35,25 +37,6 @@ SYNTAX:
 	;
 	go
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

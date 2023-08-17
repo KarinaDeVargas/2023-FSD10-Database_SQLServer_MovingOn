@@ -1,3 +1,5 @@
+-- NOT USED
+
 /* Purpose: User-Defined Triggers in database Northwind23H2
 Script Date: August 16, 2023
 Developed by: Khattar Daou
@@ -24,8 +26,9 @@ as
 sql statements
 */
 
-/* create a trigger, Sales.NotifyCustomerChangesTr, that displays a message when anyone modifies or inserts data into the table Sales.Customers 
-*/
+/* 
+create a trigger, Sales.NotifyCustomerChangesTr, that displays a message when anyone modifies or inserts data into the table Sales.Customers 
+
 
 create trigger Sales.NotifyCustomerChangesTr
 on Sales.Customers
@@ -203,3 +206,4 @@ insert into Sales.[Order Details] (OrderID, ProductID, UnitPrice, Quantity, Disc
 values (10248, 1, 48.99, 10, 0.0)
 ;
 go
+*/

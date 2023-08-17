@@ -1,3 +1,5 @@
+-- CREATED SP TO SHOW EMPLOYEES BASIC INFORMATION
+
 /* Purpose: User-Defined Stored Procedures in database MovingOn_KVP
 Script Date: August 16, 2023
 Developed by: Karina De Vargas Pereira
@@ -45,16 +47,7 @@ go
 execute HumanResources.getAllEmployeesSP
 ;
 go
-
-
-
-
-
-
-
-
-
-
+  
 
 
 drop procedure HumanResources.getAllEmployeesSP

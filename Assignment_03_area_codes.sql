@@ -21,10 +21,10 @@ For employees living in Oregon, the valid area codes are 541, 503, and 971;
 for employees living in Washington, the valid area codes are 425, 360, 206, 509, and 253; 
 for employees living in Wyoming, the valid area code is 307. 
 Warehouse managers should be able to enter phone area codes for other states not included in the lists.
-
 */
 
 
+/*** USED: VIEW | CONCAT_WS() | CASE | substring() ***/
 /* create Employee telephone area code VIEW (HumanResources.EmployeesAreaCodeView) */
 if OBJECT_ID('HumanResources.EmployeesAreaCodeView', 'V') is not null
 	drop view HumanResources.EmployeesAreaCodeView

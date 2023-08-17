@@ -1,3 +1,5 @@
+-- NOT USED
+
 /* Purpose: Using System Stored Procedures in database MovingOn_KVP
 Script Date: August 16, 2023
 Developed by: Karina De Vargas Pereira

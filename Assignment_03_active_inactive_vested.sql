@@ -12,8 +12,7 @@ runs in the context of the master database */
 use MovingOn_KVP
 ;
 go 	-- includes end of the batch marker
-
-
+				   
 /*MovinOn Inc. recently adopted a pension plan for all employees, the managers want to inform employees 
 when they are fully vested in the plan, which happens after five years of service.
 
@@ -32,9 +31,9 @@ A Simple algorithm: Check if the employee’s years of service are greater than fi
 employee is eligible, otherwise the employee is not vested yet.
 
  For active employees, hide the End Date. For inactive employees, display the End Date.
- */
+*/
 
-
+/*** USED: FN | VIEW | CONCAT_WS() | CASE | DATEDIFF() | GETDATE() | IIF() ***/
 /* create a function, HumanResources.getEmployeeYearsServedFn, that returns the employee Years Served. 
 Drop the function if exists and re-createe it */
 

@@ -1,3 +1,5 @@
+-- NOT USED
+
 /* Purpose: Creating View Objects in database Northwind23H2
 Script Date: August 15, 2023
 Developed by: Khattar Daou
@@ -13,7 +15,7 @@ use Northwind23H2
 ;
 go	-- includes end of the batch marker
 
-
+/*
 /* 1. create the contact customer view (Sales.ContactNameView) that contains the contact name and contact title */
 if OBJECT_ID('Sales.ContactNameView', 'V') is not null
 	drop view Sales.ContactNameView
@@ -81,3 +83,5 @@ go
 EXEC sp_depends @objname = N'Sales.Customers' 
 ;  
 go
+
+*/

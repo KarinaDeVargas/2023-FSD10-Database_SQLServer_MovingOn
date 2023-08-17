@@ -1,3 +1,4 @@
+-- NOT USED
 /* Purpose: Transfering tables from one schema to another in database MovingOn_KVP
 Script Date: August 16, 2023
 Developed by: Karina De Vargas Pereira

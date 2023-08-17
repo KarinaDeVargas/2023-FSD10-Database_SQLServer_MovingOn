@@ -1,3 +1,4 @@
+-- NOT USED
 /* Purpose: Using Built-In T-SQL Functions in database MovingOn_KVP
 Script Date: August 16, 2023
 Developed by: Karina De Vargas Pereira
