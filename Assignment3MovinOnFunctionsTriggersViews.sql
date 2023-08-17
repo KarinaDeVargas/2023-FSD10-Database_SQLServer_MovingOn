@@ -2,17 +2,15 @@ use movinon_t6;
 go
 
 --1. function for years of service -- finished
---2. function isvested
---3. view for active emp
---4. view for inactive emp
---5. trigger to verfiy phone # -- finished
---6. view of Emp salary's
---7. funtion for age + view 1 & 7 -- finished
---8. view 'warehousemanagerReportLabels' contains,warehouseID, WarehouseManager, Mailing address, phone
---9.view JobvenueReport
---10. view StorageRevenueReport
---11. function rent length, add to num 10
---addition questions, functions in one view? FAQ
+--2. View Isvested, Years Service
+--3. trigger to verfiy phone # -- finished
+--4. view of Emp salary's
+--5. funtion for age + view 1 & 7 -- finished
+--6. view 'warehousemanagerReportLabels' contains,warehouseID, WarehouseManager, Mailing address, phone
+--7.view JobvenueReport
+--8. view StorageRevenueReport
+--9. function rent length, add to num 10
+--10. addition questions, functions in one view? FAQ
 
 
 
@@ -20,20 +18,31 @@ go
 
 --1. function to calculate years of service
 
-create function dbo.EmployeesYearService
+create function dbo.getEmployeeYearsServedFn
 (
-	@EmpID as int
+	-- define parameter list
+	-- @parameter_name as data_type =[expression]
+	@StartDate as datetime,
+	@EndDate as datetime
 )
+-- returns data_type
 returns int
 as
 	begin
-		return
-			(select case
-						when Enddate is null then Datediff(year, StartDate, getdate())
-						else datediff(year, StartDate, EndDate)
-					end
-			from Employees
-			where EmpID = @empID)
+		-- declare the return value
+		-- declare @variable_name as data_type =[expression]
+		declare @YearsServed as int
+
+		-- compute the return value
+		select @YearsServed = abs( 
+		CASE
+        when @EndDate IS NULL and @StartDate IS NOT NULL then DATEDIFF(YEAR, @StartDate, GETDATE()) 
+        when @EndDate IS NOT NULL then DATEDIFF(YEAR, @StartDate, @EndDate)
+		else NULL
+		END)
+			   		
+		-- return the result to the function caller
+		return @YearsServed
 	end
 ;
 go
@@ -42,44 +51,37 @@ select * from dbo.employees;
 go
 
 --test
-select EmpFirst, EmpLast, dbo.EmployeesYearService(empID) as 'Years Of Service'
+select EmpFirst, EmpLast, dbo.getEmployeeYearsServedFn(StartDate, EndDate) as 'Years Of Service'
 from Employees
 ;
 go
 
--- function to determind whether an employee is vested
 
-drop function dbo.stillworking;
+-- 2.
+create view dbo.EmployeesStatusVestedView 
+as select
+	EmpID as 'Employee ID',
+	CONCAT_WS(' ' , EmpFirst, EmpLast) as 'Employee Full Name', 
+	IIF(EndDate IS NULL, 'Active', 'Inactive') as 'Employee Status',
+	dbo.getEmployeeYearsServedFn(StartDate, EndDate) as 'Years Served',
+	CASE
+        when EndDate IS NULL AND StartDate IS NOT NULL AND (DATEDIFF(YEAR, StartDate, GETDATE()) >= 5) then 'Fully Vested'
+        else 'Not Vested'
+    END as 'Vesting Status'
+from Employees
+;
 go
 
-Create function dbo.IsVested
-(@EmpID as int)
-returns bit
-as
-	begin
-	declare @isVested bit
-		return
-		
-		(select case
-					when Enddate is  not null then 0
-					else 1
-				end,
-				case
-					when Startdate is not null then 0
-					else 1
-				end,
-				case
-						when Enddate is null then Datediff(year, StartDate, getdate())
-						else datediff(year, StartDate, EndDate)
-				end
-		from employees
-		where EmpID = @empID)
-	end
+select *
+from dbo.EmployeesStatusVestedView
+order by 'Years Served' asc
 ;
 go
 
 
---5. trigger to verfiy phone #
+
+
+--3. trigger to verfiy phone #
 create trigger dbo.VerifyPhone
 on Dbo.Employees
 for insert, update
@@ -123,7 +125,11 @@ where phone = '5035742742'
 ;
 go
 
---7. funtion for age
+--4. view of Emp salary's
+
+
+
+--5. funtion for age
 create function dbo.EmployeesAge
 (	
 	@EmpID as int
@@ -158,3 +164,18 @@ select *
 from dbo.EmployeeAgeYoS
 ;
 go
+
+----6. view 'warehousemanagerReportLabels' contains,warehouseID, WarehouseManager, Mailing address, phone
+
+
+--7.view JobvenueReport
+
+
+--8. view StorageRevenueReport
+
+
+--9. function rent length, add to num 10
+
+
+--10. addition questions, functions in one view? FAQ
+
